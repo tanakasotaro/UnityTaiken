@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class cameramove : MonoBehaviour
 {
-    public GameObject player;
+    //public GameObject player;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +14,7 @@ public class cameramove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
         float posx = player.transform.position.x;
         float posy = player.transform.position.y;
         float posz = player.transform.position.z;
